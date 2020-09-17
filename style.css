@@ -1,31 +1,55 @@
-div {
-  background-color: #eb8f8f;
+h1 {
+  font-family: 'Merriweather', serif;
 }
 
-h1 {
-  margin-top: 0;
+h2 {
+  font-family: 'Merriweather', serif;
+  color: #e97171;
 }
-body {
+.top-container {
+  height: 100vh;
+  background-image: url(images/seattle.jpg);
+}
+.middle-container {
+  padding: 50px 0 20px;
   margin-left: 0;
   margin-top: 0;
+  text-align: center;
 }
 
-form.example input [type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float:left;
-  width: 80%;
-  background: #f1f1f1;
+.bottom-container {
+  background-color: #e8e8e8;
+  padding: 50px 0 20px;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: center;
 }
-form.example button {
-  float: right;
-  width:20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
+
+.searchForm {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  margin-right: 5%;
+}
+
+.about {
+  margin-right: 5%;
+}
+
+.FAQ {
+  margin-right: 5%;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.card-center {
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }

@@ -3,26 +3,85 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Remote Services</title>
+  <title>JABS</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
+  <!--bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ <!--Font style-->
+ <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="">
-    <h1>Remote Services</h1>
-    <h3>search stores/restaurants or area near you</h3>
-    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-      <input type="text" placeholder="Search...">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+  <div class="top-container">
+    <div class="d-flex bd-highlight mb-3">
+      <div class="mr-auto p-2 bd-highlight"><a href="review.html" class="text-white">Write a Review</a></div>
+      <div class="p-2 bd-highlight"><a href="logIn.html" class="text-white">Log In</a></div>
+      <div class="p-2 bd-highlight"><span class="border border-white"><a href="signUp.html" class="class=btn btn-outline-light">Sign Up</a></span></div>
+    </div>
+    <div class="searchForm">
+      <form>
+        <h1>DoMeAFavor👋🚚🚗</h1>
+        <!-- searching box -->
+        <input type="text" placeholder="shops, restaurants...">
+        <input type="text" placeholder="location">
+        <!-- searching dropdown button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Delivery
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Delivery</a>
+            <a class="dropdown-item" href="#">Drive-thru</a>
+            <a class="dropdown-item" href="#">Curbside</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">All Services</a>
+          </div>
+        </div>
+        <!--searching button-->
+        <button type="button" class="btn btn-secondary" name="button">Search</button>
+      </form>
+    </div>
   </div>
-  <p>Step 1: search stores/restaurants or area near you that offers delivery, drive-thru, or curbside pickup</p>
-  <p>Step 2: place your order from stores/restaurants of your choice</p>
-  <p>Step 3: get your order</p>
-  <hr>
-  <a href="contact.html">Contact Us</a>
-  <a href="about.html">About Us</a>
+  <div class="middle-container">
+    <h2>Find the best delivery, drive-thru, and curbside in town</h2>
+    <div class="card-deck card-center">
+      <!--Card 1: Delivery-->
+      <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <img src="images/home Delivery.jpeg" class="card-img-top" alt="delivery">
+        <div class="card-body">
+          <a class="btn btn-light"
+            href="https://www.google.com/search?rlz=1C1CHBF_enUS910US910&sxsrf=ALeKk03rBSie4ogf-2qc4JuzUg6DJZyujw%3A1600293409050&ei=IYpiX87cAtTh-gSK6Y7QAQ&q=delivery+seattle+wa&oq=delivery+seattle+wa&gs_lcp=CgZwc3ktYWIQAzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgIIADIGCAAQBRAeMgYIABAFEB46BAgAEEc6BwgjELACECc6CAgAEAgQBxAeOggIABAIEA0QHjoICAAQBxAFEB5QhStYzEJg609oAHACeACAAUiIAboIkgECMTeYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwiO8brB1e7rAhXUsJ4KHYq0AxoQ4dUDCA0&uact=5">Delivery</a>
+        </div>
+      </div>
+      <!--Card 2: Drive-thru-->
+      <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <img src="images/drive-thru.png" class="card-img-top" alt="drive-thru">
+        <div class="card-body">
+          <a class="btn btn-light" href="https://www.google.com/search?q=drive+thru+seattle&rlz=1C1CHBF_enUS910US910&oq=drive+thru+near+&aqs=chrome.2.0j69i57j0l6.21943j0j9&sourceid=chrome&ie=UTF-8">Drive-thru</a>
+        </div>
+      </div>
+      <!--Card 3: Curbside-->
+      <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <img src="images/curbside2.png" class="card-img-top"  alt="curbside">
+        <div class="card-body">
+          <a class="btn btn-light"
+            href="https://www.google.com/search?rlz=1C1CHBF_enUS910US910&sxsrf=ALeKk02u2SR3zOCaOpSWuvaI8Kkm7WYkMw%3A1600292800623&ei=wIdiX9fcJZfZ-gSguISQBg&q=curbside+pickup+seattle&oq=curbs+seattle&gs_lcp=CgZwc3ktYWIQAxgDMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB46BAgjECc6BggAEBYQHjoICAAQFhAKEB46BwgjELACECc6AggAOgQIABBDOgUIABCRAjoKCAAQsQMQgwEQQzoHCAAQsQMQQzoECAAQDVDfhQRYjdYEYJz5BGgBcAB4AYABd4gB8AqSAQQxNC4zmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab">Curbside</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a class="contact" href="contact.html">Contact Us</a>
+    <a class="about" href="about.html">About Us</a>
+    <a class="FAQ" href="FAQ.html">FAQs</a>
+    <p class = "copyright">© 2020 JABS</p>
+  </div>
 </body>
 
 </html>
